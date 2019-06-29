@@ -58,18 +58,18 @@ const dfs = (graph, startNode, targetNode) => {
         }
         return result.reverse();
     };
-    const queue = [startNode];
+    const stack = [startNode];
     const visited = [startNode];
     let parents = [];
     parents[startNode] = null;
-    while (queue.length) {
-        const node = queue.pop();
+    while (stack.length) {
+        const node = stack.pop();
         if (node === targetNode) {
             return buildPath(parents);
         }
         graph[node].forEach((line, index) => {
             if (index !== node && line && !visited.includes(index)) {
-                queue.push(index);
+                stack.push(index);
                 visited.push(index);
                 parents[index] = node;
             }
