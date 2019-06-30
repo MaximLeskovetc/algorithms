@@ -2,19 +2,19 @@
   "name": "algorithms",
   "version": "1.0.0",
   "description": "",
-  "main": "index.d.ts",
+  "main": "index.ts",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "tsc",
+    "build": "webpack",
     "test": "node test.js"
   },
   "keywords": [],
   "author": "MaximLeskovetc",
   "license": "ISC",
-  "dependencies": {
-    "typescript": "^3.5.2"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "tsc-watch": "^2.2.1"
+    "ts-loader": "^6.0.4",
+    "tsc-watch": "^2.2.1",
+    "typescript": "^3.5.2"
   }
 }
