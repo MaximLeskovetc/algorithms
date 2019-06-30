@@ -4,17 +4,21 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "prepublish": "npm run build",
     "build": "webpack",
-    "test": "node test.js"
+    "watch": "webpack --watch",
+    "nodemon": "nodemon ./index.ts"
   },
   "keywords": [],
   "author": "MaximLeskovetc",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "nodemon": "^1.19.1",
     "ts-loader": "^6.0.4",
-    "tsc-watch": "^2.2.1",
-    "typescript": "^3.5.2"
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
   }
 }

@@ -19,7 +19,7 @@
 * dfs(graph, 1, 13) // [ 1, 5, 6, 10, 13 ]
 */
 
-export default (graph: number[][], startNode: number, targetNode: number): number[] => {
+export function dfs(graph: number[][], startNode: number, targetNode: number): number[] {
     const buildPath = (parents: number[]) => {
         const result: number[] = [targetNode];
         while (parents[targetNode] !== 0) {

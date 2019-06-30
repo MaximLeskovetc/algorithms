@@ -1,1 +1,1 @@
-export * from './lib/index'
+import Lib from './lib';
