@@ -1,4 +1,4 @@
-## Implementation using javascript shortest path search algorithms
+## Implementation using javascript shortest path algorithms and sorting algorithms
 #### Search algorithm
 * DFS (Depth-first Search Algorithm - First Plot)
 * BFS (Breath-First Count Search Algorithm)
