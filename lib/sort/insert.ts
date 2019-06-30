@@ -1,10 +1,13 @@
 /*
 * @example
 * list = [1, 7, 2, 3, 4, 7, 8, 9, 1, 4, 0];
-* insertion(list) // [ 0, 1, 1, 2, 3, 4, 4, 7, 7, 8, 9 ]
+* insert(list) // [ 0, 1, 1, 2, 3, 4, 4, 7, 7, 8, 9 ]
 */
 
-export const insertion = (arr: number[]): number[] => {
+export const insert = (arr: number[]): number[] => {
+    if (!arr || !arr.length) {
+        throw 'The array does not meet the requirements';
+    }
     for (let i = 0; i < arr.length; i++) {
         const current = arr[i];
         let j = i;
