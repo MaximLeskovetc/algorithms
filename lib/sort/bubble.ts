@@ -1,3 +1,8 @@
+/*
+* @example
+* list = [1, 7, 2, 3, 4, 7, 8, 9, 1, 4, 0];
+* bubble(list) // [ 0, 1, 1, 2, 3, 4, 4, 7, 7, 8, 9 ]
+*/
 export const bubble = (arr: number[]): number[] => {
     if (!arr || !arr.length) {
         throw 'The array does not meet the requirements';
