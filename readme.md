@@ -4,6 +4,7 @@
 * BFS (Breath-First Count Search Algorithm)
 #### Sorting algorithm
 * Selection sort
-* Bubble sort
-* Merge sort
-* Insertion sort
+* Bubble sorting
+* Merge sorting
+* Insertion sorting
+* Two color flag sorting
